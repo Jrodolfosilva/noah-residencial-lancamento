@@ -1,0 +1,123 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    --color-azul: #344364;
+    --color-laranja: #FCB040;
+    --color-creme: #FFEBD0;
+    --color-rosa: #F39992;
+    --color-cinza:#F5EEE6;
+    --color-marron:#65584F;
+    --color-light-bg: #fcf6e8;
+    --color-border: #b7a79c;
+    --color-focus: #f7ce84;
+    --color-text-dark: #555555;
+    --color-laranja-hover: #e59a2a;
+
+    font-family: "Sora", sans-serif;
+    scroll-behavior: smooth;
+  
+
+}
+
+
+
+
+
+
+.menu-header{
+    padding: 20px 12px;
+}
+
+
+.menu-header .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.menu-header .menu nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+.menu-header .menu nav ul li a{
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+   
+    transition: border-color 0.6s ;
+
+    
+}
+
+.menu-header .menu nav ul li a:hover{
+    border-color: var(--color-laranja);
+    
+}
+
+
+
+header{
+    position: relative;
+}
+
+.toggle-menu-mobile {
+    display: none; /* Esconde por padrão no desktop */
+    font-size: 1.5rem; /* Ajuste o tamanho do texto ou ícone */
+    cursor: pointer;
+    z-index: 100; /* Garante que fique acima dos outros elementos */
+    color: var(--color-laranja); /* Se você usar um ícone, este será a cor */
+}
+
+
+@media screen and (max-width: 1140px) {
+    .menu-header .menu nav ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px 12px;
+        z-index: 999;
+    }
+    
+    .menu-header .menu nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-header .menu nav ul li a {
+        display: block; 
+        padding: 15px;
+        border-bottom: none; 
+    }
+
+    .toggle-menu-mobile {
+        display: block; 
+    }
+
+    .menu-header .menu nav {
+        display: flex; 
+        justify-content: flex-end;
+    }
+
+    .menu-header .menu nav.menu-open ul {
+        display: flex; 
+    }
+}
+
+
+
