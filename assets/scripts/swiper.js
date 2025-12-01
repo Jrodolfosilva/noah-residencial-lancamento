@@ -52,6 +52,10 @@ function SwiperImplatacao() {
   const swiperImplatacao = new Swiper(".swiperImplatacao", {
     spaceBetween: 10,
     preloadImages: false,
+    pagination: {
+      el: ".swiper-pagination", // Seletor do elemento HTML
+      clickable: true, 
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

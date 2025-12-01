@@ -1,0 +1,345 @@
+/* ============================================== */
+/* === AJUSTES GERAIS PARA TELAS MENORES (< 1140px) === */
+/* Este breakpoint já existia, mas foi ajustado e complementado */
+/* ============================================== */
+@media screen and (max-width: 1140px) {
+  /* Diminui o padding do container principal em telas mais estreitas */
+  .wrapper {
+    max-width: 95%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Ajustes de tipografia */
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p,
+  span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* --- HEADER (Continuação do que já existia) --- */
+  .menu-header .menu nav ul {
+    /* O comportamento do menu mobile já está bem definido aqui */
+    padding: 30px 20px; /* Mais padding para facilitar o toque */
+  }
+
+  /* --- SEÇÃO HERO --- */
+  #hero .wrapper {
+    justify-content: center; /* Centraliza o conteúdo (form) */
+    padding: 60px 0px;
+  }
+
+  #hero .wrapper .conteudo-hero {
+    width: 90%; /* Aumenta a largura do conteúdo (form) */
+    max-width: 450px;
+    gap: 60px;
+    text-align: center; 
+    align-items: center;/* Centraliza o texto */
+  }
+
+  #hero .wrapper .conteudo-hero h1 {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .wrapper-form {
+    padding: 20px 15px 0px; /* Reduz o padding interno do formulário */
+  }
+  .head-form {
+    margin: -20px -15px 20px; /* Ajusta a margem para encaixar no padding do wrapper */
+  }
+
+  /* --- SEÇÃO EMPREENDIMENTO --- */
+  #empreendimento .wrapper {
+    flex-direction: column; /* Coloca os itens em coluna */
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #empreendimento {
+    padding: 60px 12px;
+    border-top: 15px solid var(--color-laranja);
+  }
+
+  #empreendimento .wrapper .empreendimento-conteudo {
+    min-width: 100%; /* Ocupa a largura total */
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .imagem-empreendimento img {
+    width: 100%; /* Imagem se adapta ao container */
+    max-width: 600px;
+    margin: 0; /* Remove margens negativas */
+    display: block;
+  }
+
+  /* --- SEÇÃO LAZER --- */
+  .lazer-conteudo {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .headline-lazer {
+    text-align: center;
+  }
+
+  .espaco-lazer img {
+    margin-top: 60px;
+    margin-bottom: -180px; /* Reduz a margem negativa para não 'enterrar' tanto a imagem */
+    height: auto;
+  }
+
+  .espaco-lazer-lista {
+    padding-top: 250px; /* Ajusta o padding para compensar a imagem com margem negativa */
+  }
+
+  .espaco-lazer-lista .wrapper {
+    width: 90%; /* Aumenta a largura da lista de ícones */
+    max-width: 500px;
+  }
+
+  /* --- SEÇÃO PLANTAS --- */
+  #plantas .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #plantas .planta-conteudo {
+    min-width: 100%;
+    text-align: center;
+  }
+  
+  #plantas .planta-conteudo .lista-opcoes {
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  /* --- SEÇÃO IMPLANTAÇÃO --- */
+  #implantacao .wrapper {
+    width: 90%; /* Aumenta a largura do wrapper */
+  }
+
+  #implantacao .conteudo-implatacao {
+    grid-template-columns: 1fr; /* Muda para coluna única */
+    gap: 20px;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  /* --- SEÇÃO APRESENTAÇÃO --- */
+  #apresentacao .wrapper p {
+    width: 90%;
+  }
+
+  /* --- SEÇÃO LOCALIZAÇÃO --- */
+  #localizacao .wrapper {
+    grid-template-columns: 1fr; /* Coluna única */
+    gap: 40px;
+    padding: 60px 12px;
+  }
+
+  #localizacao .wrapper .conteudo-localizacao {
+    text-align: center;
+  }
+  
+  .endereco {
+      font-size: 16px;
+  }
+
+  /* Converte a lista de conveniências em coluna única, caso a tela seja muito estreita */
+  .lista-destinos {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  /* --- FOOTER --- */
+  footer > .wrapper {
+    grid-template-columns: 1fr; /* Coluna única para todos os blocos */
+    padding: 60px 12px;
+  }
+
+  .imobel-footer,
+  .leville-footer,
+  .contato-footer {
+    padding: 0; /* Remove padding lateral que existia */
+    text-align: center;
+  }
+  
+  .imobel-footer h4, 
+  .leville-footer h4, 
+  .contato-footer h4 {
+      text-align: center;
+  }
+
+  .imobel-footer img,
+  .leville-footer img {
+    margin: 0 auto;
+  }
+  
+  .contato-leville-footer ul {
+      align-items: center;
+  }
+  
+  .social {
+      justify-content: center;
+  }
+  
+  .footer-bottom {
+      text-align: center;
+  }
+}
+
+
+/* ========================================= */
+/* === AJUSTES PARA SMARTPHONES (< 576px) === */
+/* ========================================= */
+@media screen and (max-width: 576px) {
+  
+  /* Ajustes de tipografia */
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  
+  .head-form h4 {
+    font-size: 24px;
+  }
+
+  /* --- SEÇÃO HERO --- */
+  #hero .wrapper .conteudo-hero {
+    gap: 40px;
+  }
+  
+  .head-form span {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  /* --- SEÇÃO EMPREENDIMENTO --- */
+  #empreendimento {
+    padding: 40px 12px;
+  }
+
+  #empreendimento .wrapper {
+    gap: 20px;
+  }
+
+  #empreendimento .wrapper .empreendimento-conteudo h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  /* --- SEÇÃO LAZER --- */
+  #lazer {
+      padding: 40px 12px;
+  }
+  
+  .espaco-lazer-lista {
+    padding-top: 150px; /* Mais ajuste para telas menores */
+    padding-bottom: 40px;
+  }
+  
+  .espaco-lazer-lista .wrapper ul {
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha */
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .espaco-lazer-lista .wrapper {
+    width: 100%;
+  }
+
+  /* --- SEÇÃO PLANTAS --- */
+  #plantas {
+    padding: 60px 12px;
+  }
+  
+  #plantas .planta-conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  #plantas .planta-conteudo .lista-opcoes {
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* --- SEÇÃO IMPLANTAÇÃO --- */
+  #implantacao .wrapper {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  
+  #implantacao .conteudo-implatacao {
+    padding: 30px 0;
+  }
+
+  /* --- SEÇÃO APRESENTAÇÃO --- */
+  #apresentacao .wrapper {
+    padding: 60px 12px;
+  }
+  
+  #apresentacao .wrapper h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #apresentacao .wrapper p {
+    padding-top: 30px;
+  }
+
+  /* --- SEÇÃO LOCALIZAÇÃO --- */
+  #localizacao .wrapper {
+    padding: 40px 12px;
+  }
+  
+  #localizacao .wrapper h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .destino-item {
+      flex-direction: column; /* Coloca a descrição, pontilhado e tempo em linhas separadas */
+      align-items: flex-start;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  }
+
+  .separador-pontilhado {
+    display: none; /* Esconde o separador pontilhado na vertical */
+  }
+
+  .info-esquerda {
+      width: 100%;
+  }
+
+  .descricao {
+      font-weight: 400;
+  }
+  
+  .tempo {
+      font-weight: 600;
+      color: var(--color-laranja);
+      margin-top: 5px;
+  }
+
+  /* --- FOOTER --- */
+  footer > .wrapper {
+    padding: 40px 12px;
+  }
+}
+

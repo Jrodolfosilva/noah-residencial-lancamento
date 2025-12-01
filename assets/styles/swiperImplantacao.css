@@ -72,7 +72,7 @@
 
 .swiper-button-zoom-implantacao img{
   cursor: pointer;
-  width: 40px;
+  width: 25px;
 
 }
 
@@ -95,12 +95,12 @@
 
 /* Lado esquerdo e direito */
 #implantacao .swiper-button-prev {
-  left: -10%;
+  left: -5%;
   background-image: url('/images/seta-esquerda-azul.png');
 }
 
 #implantacao .swiper-button-next {
-  right: -10%;
+  right: -5%;
   background-image: url('/images/seta-direita-azul.png');
 }
 
@@ -130,3 +130,32 @@
 
 }
 
+
+
+
+#implantacao .implantacao-controllers{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -103px;
+
+}
+
+#implantacao .swiper-pagination{
+  display: flex;
+  justify-content: end;
+}
+
+
+
+#implantacao .implantacao-controllers button{
+  background-color: var(--color-azul);
+  border: 2px solid var(--color-azul-s);
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+}

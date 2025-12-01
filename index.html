@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Residencial</title>
+    <meta name="description" content="Seu refúgio urbano com alma litorânea"/>
     <link   rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/styles/swiperPlantas.css"/>
     <link rel="stylesheet" href="/assets/styles/swiperImplantacao.css"/>
@@ -14,6 +15,15 @@
     
     
     <link rel="stylesheet" href="/assets/styles/global.css"/>
+    <link rel="stylesheet" href="/assets/styles/resposive.css"/>
+
+
+    <!--Preload-->
+
+    <link rel="preload" href="/assets/images/logo2-noah.webp" as="image">
+    <link rel="preload" href="/assets/images/Logo-Noah.webp" as="image">
+    <link rel="preload" href="/assets/images/banner-hero.webp" as="image">
+
 
 </head>
 <body>
@@ -60,7 +70,7 @@
         <section class="hero" id="hero">
             <div class="wrapper">
                <div class="conteudo-hero">
-                    <img src="/assets/images/logo2-noah.webp" width="300" height="100" alt="">
+                    <img src="/assets/images/logo2-noah.webp" fetchpriority="high" loading="eager" width="300" height="107" alt="Noah Logomarca">
                     <h1>Seu refúgio urbano com alma <b>litorânea</b></h1>
                     <div class="wrapper-form">
 
@@ -96,7 +106,7 @@
         <section class="empreendimento" id="empreendimento">
             <div class="wrapper">
                 <div class="empreendimento-conteudo">
-                    <span>O Residencial</span>
+                    <span>O RESIDENCIAL</span>
                     <h2>
                         <b>Viva o Litoral</b><br/>
                         Em sua melhor versão
@@ -110,15 +120,15 @@
                     </p>
                 </div>
                 <div class="imagem-empreendimento">
-                    <img src="/assets/images/sobre.png" class="sobre" alt="" >
+                    <img src="/assets/images/sobre.webp" fetchpriority="low" loading="lazy" class="sobre" alt="" >
                 </div>
             </div>
         </section>
 
         <section class="lazer" id="lazer">
             <div class="wrapper">
-                <div>
-                    <img src="/assets/images/opcoes-Noah.webp" width="350" alt="">
+                <div class="op">
+                    <img src="/assets/images/opcoes-Noah.webp" loading="lazy" fetchpriority="low" width="350" alt="">
                 </div>
                 <div class="lazer-conteudo">
                     <div class="headline-lazer">
@@ -139,7 +149,7 @@
                 </div>
 
                 <div class="espaco-lazer">
-                    <img src="/assets/images/piscina.webp" height="600" alt="">
+                    <img src="/assets/images/piscina.webp" loading="lazy" fetchpriority="low" height="600" alt="Espaço lazer Noah">
                 </div>
             </div>
         </section>
@@ -147,26 +157,26 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="/assets/images//Slice 1.png" width="120" alt="">
+                        <img src="/assets/images//Slice 1.png" loading="lazy" fetchpriority="low" width="120" alt="">
                             <p>Piscina</p>
                     </li>
                      <li>
-                        <img src="/assets/images//Slice 2.png" width="120" alt="">
+                        <img src="/assets/images//Slice 2.png" loading="lazy" fetchpriority="low" width="120" alt="">
                         <p>Deck</p>
                     </li>
                     <li>
-                        <img src="/assets/images//Slice 3.png" width="120" alt="">
+                        <img src="/assets/images//Slice 3.png" loading="lazy" fetchpriority="low" width="120" alt="">
                         <p>churrasqueira</p>
                     </li>
                 </ul>
-            </div>      
+            </div>
         </div>
 
         <section class="plantas" id="plantas">
             <div class="wrapper">
                 <div class="planta-conteudo">
                     <div>
-                        <span>Plantas</span>
+                        <span>PLANTAS</span>
                         <h2>
                             <b>Tipologias</b><br/>
                             que se adaptam ao seu estilo de vida
@@ -179,15 +189,15 @@
                     </div>
                     <ul class="lista-opcoes">
                         <li>
-                            <img src="/assets/images/metros.png" width="60px" height="45" alt="">
+                            <img src="/assets/images/metros.png" loading="lazy" fetchpriority="low" width="60px" height="45" alt="">
                             <p>60,77m<sup>2</sup></p>
                         </li>
                         <li>
-                            <img src="/assets/images/cama.png" width="60px" height="50" alt="">
+                            <img src="/assets/images/cama.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
                             <p>2 Suítes</p>
                         </li>
                         <li>
-                            <img src="/assets/images/garagem.png" width="60px" height="50" alt="">
+                            <img src="/assets/images/garagem.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
                             <p>1 ou 2 Vagas</p>
                         </li>
                     </ul>
@@ -197,21 +207,15 @@
 
                     <div class="swiper swiperPlantasThumbs" style="margin-bottom: 40px;">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide"><span class="step-planta">Planta 01</span></div>
-                        <div class="swiper-slide"><span class="step-planta">Planta 02</span></div>
+                        <div class="swiper-slide"><span class="step-planta">Planta</span></div>
                         </div>
                     </div>
 
                     <div class="swiper swiperPlantas">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/images/planta.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
-                                <p><b>Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
-
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="/assets/images/planta.png"  class="lg2" loading="lazy" fetchpriority="low" alt="Planta 02" />
-                                <p><b>Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
+                                <img src="/assets/images/planta01.webp" class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
+                                <p style="padding-top: 30px;"><b style="font-weight: 500; ">Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
                             </div>
                         </div>
 
@@ -226,7 +230,7 @@
             <div class="wrapper">
                 <div class="conteudo-implatacao">
                     <div class="headline-implantacao">
-                        <span>Implantação</span>
+                        <span>IMPLANTAÇÃO</span>
                         <h2><b>Implantação</b> inteligente</h2>
                     </div>
                     <p>
@@ -243,11 +247,20 @@
                     <div class="swiper swiperImplatacao">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/images/implanta.png" class="lg3" loading="lazy" fetchpriority="low" alt="Térreo" />
+                                <img src="/assets/images/implantacao02.webp"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                                <p style="text-align: center; padding-top: 30px; color: #fff;">Estacionamento</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/assets/images/implanta.webp" class="lg3" loading="lazy" fetchpriority="low" alt="Térreo" />
+                                <p style="text-align: center; padding-top: 30px; color: #fff;">Planta </p>
+
                             </div>
                             <div class="swiper-slide">
-                                <img src="/assets/images/implanta.png"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                                <img src="/assets/images/implantacao03.webp"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                                <p style="text-align: center; padding-top: 30px; color: #fff;">Planta </p>
                             </div>
+                            
                         
                         </div>
                     </div>
@@ -257,6 +270,14 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                      </div>
+
+                     <div class="implantacao-controllers">
+                        <button class="swiper-button-zoom-implantacao">Vizualizar <img src="/assets/images/lupa-branca.png"  alt=""></button>
+                        <div class="swiper-pagination"></div>
+
+
+                     </div>
+                     
                     
 
                 </div>
@@ -271,7 +292,20 @@
                     <br/>
                     De viver ubatuba
                 </h2>
-                <iframe width="100%" height="514" src="https://www.youtube.com/embed/F0bf0b1l7a0" title="Noah Garden | Condomínio fechado em Cascavel/PR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <div class="youtube-container"> 
+                    <div class="layer-video"></div>
+                    <iframe class="youtube-iframe" 
+                    width="100%" height="100%"
+                        src="https://www.youtube.com/embed/F0bf0b1l7a0" 
+                        title="Noah Garden | Condomínio fechado em Cascavel/PR" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
                 <p>O Noah representa o novo modo de viver Ubatuba: Lazer exclusivo no alto, conforto em cada detalhe e a conveniência de estar perto de tudo.</p>
             </div>
         </section>
@@ -280,7 +314,7 @@
         <section class="localizacao" id="localizacao">
             <div class="wrapper">
                 <div class="conteudo-localizacao">
-                    <span>Localização</span>
+                    <span>LOCALIZAÇÃO</span>
                     <h2>
                         <b>As belezas do litoral</b>
                         <br/>
@@ -380,113 +414,72 @@
         </section>
 
     </main>
+
     <footer id="contato">
         <div class="wrapper">
-            <div class="imobel-footer">
-
-                <img src="/images/logo-imobel.png" width="172" alt="IMOBEL"fetchpriority="low" loading="lazy">
-
-                <p>50 anos de tradição e excelência em Incorporação e construção.</p>
-                <div class="contato-leville-footer">
+            
+            <div class="info-contato-footer">
                 
-                    <ul>
-                        <li>
-                            <a href="https://wa.me/5511930749710" target="_blank">
-                                <img src="/images/whatsapp-gold.png " width="32" alt="" fetchpriority="low" loading="lazy">
-                                11 <strong style="font-size: 20px;">3074-9710</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://maps.app.goo.gl/f4KzT4kFkdYWgyLS9" target="_blank" >
-                                <img src="./images/gps-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
-                                Ed. Faria Lima Business Center – FLBC
-                                Av. Brigadeiro Faria Lima, 1509, 5º Andar
-                                Pinheiros – São Paulo – SP 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://grupoimobel.com.br"  target="_blank">
-                                <img src="./images/globo-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
-                                www.grupoimobel.com.br
-                            </a>
-                        </li>
-                    </ul>
+                <div class="logos-and-contact-grid">
+                    
+                    <div class="sub-col-logo-social">
+                        <img src="/assets/images/logo-noah.webp" alt="Noah Residencial" width="172" fetchpriority="low" loading="lazy">
+                        
+                        <ul class="social-icons-footer">
+                            <li><a href="URL_FACEBOOK" target="_blank"><img src="./images/facebook-gold.png" width="32" alt="F"/></a></li>
+                            <li><a href="URL_INSTAGRAM" target="_blank"><img src="./images/instagram-gold.png" width="32" alt="I"/></a></li>
+                            <li><a href="URL_WHATSAPP" target="_blank"><img src="/images/whatsapp-gold.png" width="32" alt="W"/></a></li>
+                            <li><a href="URL_YOUTUBE" target="_blank"><img src="./images/youtube-gold.png" width="32" alt="Y"/></a></li>
+                        </ul>
+                    </div>
 
+                    <div class="sub-col-mrk-contact">
+                        <img src="/assets/images/logo-noah.webp" alt="Grupo MRK" width="172" fetchpriority="low" loading="lazy">
+                        
+                        <div class="contato-telefone">
+                            <p class="numero-telefone">12 99185-5181</p>
+                        </div>
+
+                        <p class="handle-social-mrk">@mrkincorporadora</p>
+                    </div>
                 </div>
 
-            </div>
-
-            <div class="leville-footer">
-                <img src="/images/logo-leville.png" width="172" alt="Le Ville"fetchpriority="low" loading="lazy">
-
-                <p>Inspirado pela arte, criado para quem valoriza o extraordinário.</p>
-
-                <div class="contato-leville-footer">
-                    <ul>
-                        <li>
-                            <a href="https://wa.link/8jz85p" target="_blank">
-                            <img src="/images/whatsapp-gold.png" alt="" fetchpriority="low" loading="lazy">
-                            71 <stron style="font-size: 20px; font-weight: 700;">9.9144-7770</stron>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li>
-                            <a href="https://m.facebook.com/p/Imobel-Incorporadora-100092198325178/?wtsid=rdr_0GIe9UVNhFTVaXrCr&hr=1"  target="_blank">
-                                <img src="./images/facebook-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/imobel_incorporadora?igsh=eGI0Ymt0NXU2MzU3"target="_blank">
-                                <img src="./images/instagram-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/grupoimobel/"  target="_blank">
-                                <img src="./images/linkedin-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
-                            </a>
-                        </li>
-                    </ul>
-
+                <div class="texto-legal-footer">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                 </div>
 
             </div>
 
             <div class="contato-footer">
-                <h4>Entre em contato</h4>
-                <p>Aproveite condições exclusivas e vantagens diretamente com a Incorporadora!</p>
+                <h4>CADASTRE-SE AQUI:</h4>
+                <p>Recebo agora mais informações com exclusividade!</p>
                 <div class="wrapper-form-dark">
-                <form id="contact-form-dark" class="body-form-dark">
-                    
-                    <input type="text" id="dark-name" name="name" placeholder="Digite aqui seu nome" required>
-
-                    <input type="email" id="dark-email" name="email" placeholder="seu@e-mail.com.br" required>
-
-                    <input type="tel" id="dark-phone" name="phone" placeholder="(DDD) 00000-000" required>
-                    
-                    <textarea id="dark-message" name="message" placeholder="Mensagem" rows="5" required></textarea>
-
-                    <div class="button-container">
-                        <button type="submit">ENVIAR</button>
-                    </div>
-                    
-                    <div id="form-message-dark"></div>
-
-                </form>
-
-            </div>
-                
+                    <form id="contact-form-dark" class="body-form-dark">
+                        <input type="text" id="dark-name" name="name" placeholder="Seu nome" required>
+                        <input type="email" id="dark-email" name="email" placeholder="E-mail" required>
+                        <input type="tel" id="dark-phone" name="phone" placeholder="Telefone" required>
+                        <textarea id="dark-message" name="message" placeholder="Mensagem" rows="5" required></textarea>
+                        <div class="button-container">
+                            <button type="submit">ENVIAR</button>
+                        </div>
+                        <div id="form-message-dark"></div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="wrapper">
-                <a href=""  target="_blank">Desenvolvido por Affinity</a>
+                <a href="" target="_blank">Desenvolvido por Affinity</a>
             </div>
         </div>
-    </footer> 
+    </footer>
+
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="/assets/scripts/global.js"></script>
     <script defer src="/assets/scripts/swiper.js"></script>
+    <script defer src="/assets/scripts/form-footer.js"></script>
+    <script defer src="/assets/scripts/form.js"></script>
+
     
     <!-- LightGallery planta ---->
      <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>

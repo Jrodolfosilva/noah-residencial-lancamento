@@ -1,7 +1,7 @@
 /* Declaração para Campton Black (900) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonBlack.otf") format("opentype");
+  src: url("/assets/fonts/CamptonBlack.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Declaração para Campton Bold (700) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonBold.otf") format("opentype");
+  src: url("/assets/fonts/CamptonBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Declaração para Campton Bold Italic (700 Itálico) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonBoldItalic.otf") format("opentype");
+  src: url("/assets/fonts/CamptonBoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
@@ -27,7 +27,7 @@
 /* Declaração para Campton SemiBold (600) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonSemiBold.otf") format("opentype");
+  src: url("/assets/fonts/CamptonSemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
@@ -35,7 +35,7 @@
 /* Declaração para Campton Medium (500) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonMedium.otf") format("opentype");
+  src: url("/assets/fonts/CamptonMedium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -43,7 +43,7 @@
 /* Declaração para Campton Book (Geralmente 400 - Regular) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonBook.otf") format("opentype");
+  src: url("/assets/fonts/CamptonBook.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -51,7 +51,7 @@
 /* Declaração para Campton Light (300) */
 @font-face {
   font-family: "Campton";
-  src: url("fonts/CamptonLight.otf") format("opentype");
+  src: url("/assets/fonts/CamptonLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
@@ -75,13 +75,12 @@
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden!important;
+body{
+  overflow-x: hidden;
 }
 
-
 b{
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
@@ -97,13 +96,18 @@ h2 {
 
 p,
 span {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.swiper-wrapper{
+  align-items: center;
 }
 
 /*HEADER*/
@@ -136,15 +140,16 @@ header {
   border: 2px solid transparent;
   color: var(--color-branco);
   transition: border-color 0.6s;
-  font-style: italic;
   text-transform: uppercase;
   font-size: 13.5px;
   color: #b9b9b9;
 }
 
 .menu-header .menu nav ul li a:hover {
+  font-style: italic;
   border-color: var(--color-laranja);
   color: #fff;
+  font-weight: 300;
 }
 
 .toggle-menu-mobile {
@@ -314,7 +319,6 @@ header {
   padding: 90px 12px;
   padding-top: 30px;
   border-top: 20px solid var(--color-laranja);
-
   background-color: var(--color-azul);
 }
 
@@ -323,6 +327,8 @@ header {
   gap: 90px;
   align-items: end;
   color: var(--color-branco);
+   
+
 }
 
 #empreendimento .wrapper .empreendimento-conteudo {
@@ -342,10 +348,10 @@ header {
 }
 
 .imagem-empreendimento img {
-  width: 760px;
-  margin-top: -200px;
-  margin-bottom: -170px;
-  margin-right: -100px;
+    width: 813px;
+    margin-top: -200px;
+    margin-bottom: -184px;
+    margin-right: -165px;
 }
 
 
@@ -368,14 +374,24 @@ header {
 .lazer-conteudo{
     display: flex;
     padding-top: 90px;
-    width: 80%;
-    gap: 60px;
+    width: 90%;
+    gap: 90px;
     margin: 0 auto;
     color: #fff;
 }
 
+.headline-lazer{
+  min-width: fit-content;
+  text-align: right;
+}
 
-
+.headline-lazer h2{
+  color: var(--color-laranja);
+  font-weight: 300;
+}
+.op img{
+  /*usar para reduzir o width no mobile*/
+}
 .espaco-lazer img{
     margin: 0 auto;
     margin-top: 90px;
@@ -400,6 +416,7 @@ header {
 .espaco-lazer-lista .wrapper ul{
     display: flex;
     justify-content: space-between;
+    max-width: 800px;
 }
 
 .espaco-lazer-lista .wrapper ul li{
@@ -542,6 +559,7 @@ header {
   margin-bottom: 30px;
   text-transform: uppercase;
   line-height: 45px;
+  text-align: center;
 }
 
 #apresentacao .wrapper p{
@@ -573,7 +591,9 @@ header {
 
 
 #localizacao{
-
+  position: relative;
+  margin-bottom: -100px;
+  z-index: 9;
 
 }
 
@@ -599,24 +619,26 @@ header {
   padding: 12px;
   background-color: var(--color-laranja);
   color: var(#014D55);
-  
-  z-index: 999;
-}
+  margin-top: 30px;
+  }
 
 
 #localizacao .wrapper .conteudo-localizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 #localizacao .conveniencia{
   background-color: var(--color-azul);
-  margin-bottom: -200px;
   z-index: 99;
   
 }
 
 .conveniencia{
   padding: 30px 12px;
+  margin-bottom: -50px;
 }
 .lista-destinos {
     margin: 0 auto;
@@ -681,77 +703,219 @@ header {
 
 
 
+
 /*FOOTER*/
 
 footer{
-    background-color: var(--color-azul);
-    border-top: 20px solid var(--color-laranja);
-    margin-top: -6px;
+  background-color: var(--color-azul);
 }
 
+
+/* --- LAYOUT PRINCIPAL (DOIS COLUNAS) --- */
 footer > .wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 1.5fr para a coluna da esquerda (info/logos) e 1fr para o formulário */
+    grid-template-columns: 1.5fr 1fr; 
     padding: 90px 12px;
-    gap: 30px;
+    gap: 60px; 
     color: var(--color-cinza);
-
-
 }
 
-footer > .wrapper h4{
-    color: var(--color-laranja);
-    font-size: 20px;
-    line-height: 30px;
+/* Responsividade: Volta para coluna única em telas menores */
+@media (max-width: 992px) {
+    footer > .wrapper {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+}
+
+/* --- COLUNA ESQUERDA (INFO-CONTATO-FOOTER) --- */
+
+.info-contato-footer {
+    display: flex;
+    flex-direction: column;
+    /* Adiciona espaço entre o grid de logos/contato e o texto legal */
+    gap: 40px; 
+}
+
+
+/* --- GRID INTERNO (LOGOS + CONTATO) --- */
+
+/* Esta é a linha 1 da coluna da esquerda, dividida em duas sub-colunas */
+.logos-and-contact-grid {
+    display: grid;
+    /* O grid 1fr 1fr solicitado */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    /* Garante que o grid interno seja coluna única em telas muito pequenas */
+    /* Para telas de tablet para baixo, vamos quebrar */
+    
+}
+@media (max-width: 768px) {
+    .logos-and-contact-grid {
+        grid-template-columns: 1fr; /* Coluna única em telas menores */
+        gap: 20px;
+    }
+    /* Centraliza os itens quando estiver em coluna única */
+    .sub-col-logo-social,
+    .sub-col-mrk-contact {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* --- SUB-COLUNA 1 (NOAH + REDES) --- */
+
+.sub-col-logo-social {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre a logo e os ícones */
+}
+.sub-col-logo-social img {
+    /* Ajusta a largura máxima da logo */
+    max-width: 172px; 
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para a UL das Redes Sociais */
+.social-icons-footer {
+    display: flex;
+    list-style: none; /* Remove bolinhas da UL */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+/* --- SUB-COLUNA 2 (MRK + CONTATO) --- */
+
+.sub-col-mrk-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os elementos dessa coluna */
+}
+
+/* Telefone (Estilo da imagem) */
+.contato-telefone {
+    margin-top: 20px; 
+}
+.numero-telefone {
+    color: #fff; 
+    font-size: 32px; 
+    font-weight: 700;
+}
+
+/* Handle Instagram */
+.handle-social-mrk {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Texto Legal (Abaixo do Grid Interno) */
+.texto-legal-footer p {
+    color: var(--color-cinza); 
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* --- ESTILOS DO FORMULÁRIO (contato-footer - Mantidos da resposta anterior) --- */
+
+.contato-footer h4{
+    color: var(--color-laranja); 
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.contato-footer p{
+    color: #fff;
+    font-size: 16px;
     margin-bottom: 20px;
 }
+/* ... (outros estilos do form dark, inputs e botão) ... */
 
-footer > .wrapper p{
-    line-height: 20px;
+.wrapper-form-dark {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.imobel-footer,
-.leville-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 10px;
-    padding: 0 30px;
+.body-form-dark input[type="text"],
+.body-form-dark input[type="email"],
+.body-form-dark input[type="tel"],
+.body-form-dark textarea {
+  width: 100%;
+  padding: 12px 15px;
 
+  border: 1px solid var(--color-azul-s);
+  background-color: #013236;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: #fff;
 }
 
-.imobel-footer{
-    padding-left: 0;
+.body-form-dark textarea {
+  resize: vertical;
 }
 
-
-
-.contato-leville-footer ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-
+.body-form-dark input:focus,
+.body-form-dark textarea:focus {
+  border-color: var(--color-laranja);
+  outline: none;
 }
 
-.social{
-    flex-direction: row!important;
-    margin-top: 20px;
+.body-form-dark input::placeholder,
+.body-form-dark textarea::placeholder {
+  color: var(--color-azul-s);
 }
 
-.contato-leville-footer ul li a{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    line-height: 25px;
+.body-form-dark .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
-.contato-footer{
-    padding: 00px;
+.body-form-dark button[type="submit"] {
+  width: auto;
+  background-color: var(--color-laranja);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.contato-footer{
-    padding-right: 0;
+.body-form-dark button[type="submit"]:hover {
+  background-color: var(--color-laranja-hover);
+}
+
+#form-message-dark {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+}
+.loading {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }
 
 
@@ -762,3 +926,87 @@ footer > .wrapper p{
 
 }
 
+.footer-bottom a{
+    color: var(--color-azul-s);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youtube-container{
+  width: 100%;
+  height: 600px;
+  z-index: 99;
+}
+
+.youtube-container iframe{
+  z-index: 2;
+  position: relative;
+}
+
+.layer-video{
+  position: relative;
+  width: 100%;
+}
+
+.layer-video::after{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  background-image:url("/assets/images/background-layer.webp");
+  width: 300px;
+  height: 400px;
+  background-size: contain;
+  right: -20%;
+
+}
+
+
+
+
+@media (max-width:760px) {
+  .op img{
+    max-width: 100%;
+  }
+
+  .layer-video{
+    display:none;
+  }
+
+  .conteudo-hero img{
+    display: none;
+  }
+
+  .headline-lazer{
+    text-align: left!important;
+  }
+
+  footer{
+    text-align: center!important;
+    
+  }
+}
