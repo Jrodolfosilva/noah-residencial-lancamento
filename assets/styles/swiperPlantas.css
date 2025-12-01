@@ -1,0 +1,186 @@
+
+
+#plantas .swiperPlantas {
+  height: auto;
+  overflow: hidden;
+}
+
+.carrossel-plantas {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Imagem principal */
+#plantas .swiperPlantas .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Miniaturas */
+#plantas .swiperPlantasThumbs {
+  width: 100%;
+  height: fit-content;
+}
+
+#plantas .swiperPlantasThumbs .swiper-slide {
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  text-align: center;
+}
+
+.step-planta {
+  display: inline-block;
+  padding: 6px 10px;
+  color: var(--color-azul);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 600;
+  white-space: nowrap; 
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+
+.step-planta:hover {
+    border-color: var(--color-azul);
+
+}
+
+/* Estado ativo da miniatura */
+#plantas .swiperPlantasThumbs .swiper-slide-thumb-active .step-planta {
+    border-color: var(--color-azul);
+
+}
+
+/* ======================
+   NAVEGAÇÃO (SETA)
+====================== */
+
+.swiper-button-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.swiper-button-zoom-planta img{
+  cursor: pointer;
+  width: 40px;
+
+}
+
+
+
+
+#plantas .swiper-button-next-plantas,
+#plantas .swiper-button-prev-plantas {
+   width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-size: 50px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Lado esquerdo e direito */
+#plantas .swiper-button-prev-plantas {
+  left: 40%;
+  background-image: url('/images/seta-esquerda.png');
+}
+
+#plantas .swiper-button-next-plantas {
+  right: 40%;
+  background-image: url('/images/seta-direita.png');
+}
+
+/* Remove pseudo-elementos antigos */
+#plantas .swiper-button-prev-plantas::after,
+#plantas .swiper-button-next-plantas::after {
+  content: none;
+}
+
+
+
+
+#plantas .swiper-button-disabled{
+  opacity: 0.4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #plantas .swiper-button-next-plantas,
+  #plantas .swiper-button-prev-plantas {
+    width: 36px;
+    height: 36px;
+    background-size: 18px;
+  }
+
+  #plantas .swiper-button-prev-plantas {
+    left: -10px;
+  }
+
+  #plantas .swiper-button-next-plantas {
+    right: -10px;
+  }
+}
+
+
+
+/*MEU ESTILO*/
+
+.carrossel-plantas{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+}
+
+
+
+#plantas .swiperPlantasThumbs {
+width:300px ;
+height: 100%;
+border-right: 2px solid var(--color-azul);
+}
+
+
+.swiperPlantasThumbs .swiper-wrapper{
+    display: grid!important;
+    height: auto;
+    gap:10px;
+    padding: 0 30px;
+    justify-items: start!important;
+}
+
+
+
+#plantas .swiperPlantasThumbs .swiper-slide{
+    width: fit-content!important;
+    margin: 0px!important;
+}
+
+
+.swiper-slide-active{
+    position: relative;
+}
+
+.swiperPlantasThumbs  .swiper-slide-thumb-active::after{
+    display: block;
+    content: "";
+    width: 40px!important;
+    height: 2px!important;
+    background-color: var(--color-azul);
+
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    z-index: 999;
+}

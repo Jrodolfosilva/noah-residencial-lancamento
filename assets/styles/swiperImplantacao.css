@@ -1,0 +1,132 @@
+/*IMPLANTACAO*/
+
+
+#implantacao .swiperImplatacao {
+  height: auto;
+  overflow: hidden;
+}
+
+.carrossel-implantacao {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Imagem principal */
+#implantacao .swiperImplatacao .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Miniaturas */
+#implantacao .swiperImplatacaoThumbs {
+  width: 80%;
+  height: fit-content;
+}
+
+#implantacao .swiperImplatacaoThumbs .swiper-slide {
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  text-align: center;
+}
+
+/* Botões (thumbs) */
+.step-implantacao {
+  display: inline-block;
+  padding: 10px 14px; /* mais espaçamento para caber o texto */
+  border: 2px solid var(--color-azul);
+  color: var(--color-azul);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  width: 100%;
+  width: fit-content;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.step-implantacao:hover {
+  background-color: var(--color-azul);
+  color: #fff;
+}
+
+/* Estado ativo da miniatura */
+#implantacao .swiperImplatacaoThumbs .swiper-slide-thumb-active .step-implantacao {
+  background-color: var(--color-azul);
+  color: #fff;
+  border-color: var(--color-azul);
+}
+
+/* ======================
+   NAVEGAÇÃO (SETAS)
+====================== */
+
+
+
+
+
+.swiper-button-zoom-implantacao img{
+  cursor: pointer;
+  width: 40px;
+
+}
+
+
+#implantacao .swiper-button-next,
+#implantacao .swiper-button-prev {
+ 
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-size: 20px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  background-color: #011c1f;
+  padding: 12px;
+  border-radius: 1000px;
+}
+
+/* Lado esquerdo e direito */
+#implantacao .swiper-button-prev {
+  left: -10%;
+  background-image: url('/images/seta-esquerda-azul.png');
+}
+
+#implantacao .swiper-button-next {
+  right: -10%;
+  background-image: url('/images/seta-direita-azul.png');
+}
+
+
+/* Desabilitado */
+#implantacao .swiper-button-disabled {
+  opacity: 0.4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #implantacao .swiperImplatacaoThumbs .swiper-slide {
+    flex: 1 0 45%;
+  }
+
+  .step-planta {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  #implantacao .swiper-button-next,
+  #implantacao .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    background-size: 20px;
+  }
+
+}
+

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Residencial</title>
-
-
-
-    <!--Importação CSS Padrão Global-->
+    <link   rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/styles/swiperPlantas.css"/>
+    <link rel="stylesheet" href="/assets/styles/swiperImplantacao.css"/>
+    
+    
+    <!--Importação LightGallery---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    
+    
     <link rel="stylesheet" href="/assets/styles/global.css"/>
-
-
 
 </head>
 <body>
@@ -18,7 +21,7 @@
         <div class="menu-header">
             <div class="wrapper menu">
                 <a href="/">
-                    <img src="/assets/images/Logo-Noah.webp" fetchpriority="high" width="156" height="52"  alt="Logo Leville"/>
+                    <img src="/assets/images/Logo-Noah.webp" fetchpriority="high" width="200" height="70" alt="Logo Leville"/>
                 </a>
                 <nav id="menuPrincipal">
                     <div class="toggle-menu-mobile">
@@ -54,8 +57,6 @@
         </div>
     </header> 
     <main>
-        <!--Hero-->
-
         <section class="hero" id="hero">
             <div class="wrapper">
                <div class="conteudo-hero">
@@ -69,33 +70,29 @@
                         </div>
 
                         <form id="contact-form" class="body-form">
-                            <!-- Campo Nome -->
                             <label class="lb" for="your-name"></label>
                             <input type="text" id="your-name" name="your-name" placeholder="Digite aqui seu nome" required>
 
-                            <!-- Campo E-mail -->
                             <label class="lb" for="your-email"></label>
                             <input type="email" id="your-email" name="your-email" placeholder="Seu melhor e-mail" required>
 
-                            <!-- Campo Telefone -->
                             <label class="lb" for="your-phone"></label>
                             <input type="tel" id="your-phone" name="your-phone" placeholder="(DDD) 0 0000 - 0000" required>
 
                             <button type="submit">Enviar</button>
-                                        
+                                            
                             <div id="form-message"></div>
 
                         </form>
 
-                       
+                        
 
-                </div>
+                    </div>
                </div>
             </div>
 
         </section>
 
-        <!--Empreendimento-->
         <section class="empreendimento" id="empreendimento">
             <div class="wrapper">
                 <div class="empreendimento-conteudo">
@@ -113,20 +110,25 @@
                     </p>
                 </div>
                 <div class="imagem-empreendimento">
-                    <img src="/assets/images/sobre.png" class="sobre"  alt="" >
+                    <img src="/assets/images/sobre.png" class="sobre" alt="" >
                 </div>
             </div>
         </section>
 
-        <!--Lazer-->
         <section class="lazer" id="lazer">
             <div class="wrapper">
                 <div>
                     <img src="/assets/images/opcoes-Noah.webp" width="350" alt="">
                 </div>
                 <div class="lazer-conteudo">
-                    <img src="/assets/images/opcoes-Noah.webp" width="200" alt="">
-                    <p>
+                    <div class="headline-lazer">
+                        <span>LAZER</span>
+                        <h2> 
+                            <b>LAZER</b> 
+                            </br>NA COBERTURA
+                        </h2>
+                    </div>
+                   <p>
                         No topo do edifício, a área de convivência
                         do Residencial Noah foi projetada para oferecer
                         momentos de descanso com vista privilegiada para 
@@ -145,24 +147,408 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="" alt="">
+                        <img src="/assets/images//Slice 1.png" width="120" alt="">
                             <p>Piscina</p>
                     </li>
                      <li>
-                        <img src="" alt="">
+                        <img src="/assets/images//Slice 2.png" width="120" alt="">
                         <p>Deck</p>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img src="/assets/images//Slice 3.png" width="120" alt="">
                         <p>churrasqueira</p>
                     </li>
                 </ul>
-            </div>      
+            </div>      
         </div>
 
+        <section class="plantas" id="plantas">
+            <div class="wrapper">
+                <div class="planta-conteudo">
+                    <div>
+                        <span>Plantas</span>
+                        <h2>
+                            <b>Tipologias</b><br/>
+                            que se adaptam ao seu estilo de vida
+                        </h2>
+                        <p>
+                            O Noah oferece apartamentos de 2 dormitórios e lofts, 
+                            com plantas inteligentes e 
+                            funcionais que valorizam cada metro quadrado.
+                        </p>
+                    </div>
+                    <ul class="lista-opcoes">
+                        <li>
+                            <img src="/assets/images/metros.png" width="60px" height="45" alt="">
+                            <p>60,77m<sup>2</sup></p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/cama.png" width="60px" height="50" alt="">
+                            <p>2 Suítes</p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/garagem.png" width="60px" height="50" alt="">
+                            <p>1 ou 2 Vagas</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carrossel-plantas">
+
+                    <div class="swiper swiperPlantasThumbs" style="margin-bottom: 40px;">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><span class="step-planta">Planta 01</span></div>
+                        <div class="swiper-slide"><span class="step-planta">Planta 02</span></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper swiperPlantas">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/images/planta.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
+                                <p><b>Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/planta.png"  class="lg2" loading="lazy" fetchpriority="low" alt="Planta 02" />
+                                <p><b>Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
+                            </div>
+                        </div>
+
+                  
+ 
+                    </div>
+
+            </div>
+        </section>
+
+        <section class="implantacao" id="implantacao">
+            <div class="wrapper">
+                <div class="conteudo-implatacao">
+                    <div class="headline-implantacao">
+                        <span>Implantação</span>
+                        <h2><b>Implantação</b> inteligente</h2>
+                    </div>
+                    <p>
+                        Com terreno de $974,01 m<sup>2</sup>, o Noah foi planejado 
+                        para oferecer funcionalidade em cada metro. A disposição das vagas, 
+                        o acesso fácil, as áreas comuns e o lazer na cobertura 
+                        garantem fluidez, privacidade e aproveitamento inteligente da luz natural.
+                    </p>
+                </div>
+                <div class="carrossel-implantacao" >
+
+
+                    <!-- Slides principais -->
+                    <div class="swiper swiperImplatacao">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/images/implanta.png" class="lg3" loading="lazy" fetchpriority="low" alt="Térreo" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/implanta.png"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <!-- Botões de navegação -->
+                     <div class="swiper-button-nav">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                     </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="apresentacao" id="apresentacao">
+            <div class="wrapper">
+                <h2>
+                    <b>Um novo jeito</b>
+                    <br/>
+                    De viver ubatuba
+                </h2>
+                <iframe width="100%" height="514" src="https://www.youtube.com/embed/F0bf0b1l7a0" title="Noah Garden | Condomínio fechado em Cascavel/PR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>O Noah representa o novo modo de viver Ubatuba: Lazer exclusivo no alto, conforto em cada detalhe e a conveniência de estar perto de tudo.</p>
+            </div>
+        </section>
+
+
+        <section class="localizacao" id="localizacao">
+            <div class="wrapper">
+                <div class="conteudo-localizacao">
+                    <span>Localização</span>
+                    <h2>
+                        <b>As belezas do litoral</b>
+                        <br/>
+                        com a conveniência da cidade
+                    </h2>
+                    <p>
+                        No coração de Ubatuba, o Noah nasce em um 
+                        endereço que une conveniência e mobilidade. 
+                        Um ponto estratégico, 
+                        cercado por comércio, lazer e pertinho da praia.
+                    </p>
+                    <p class="endereco">  <b>Rua Gastão Madeira,836</b> - Umuarama -  Ubatuba | SP</p>
+                </div>
+                <div class="conveniencia">
+                    <div class="lista-destinos">
+
+                        <div class="destino-item">
+                            <span class="descricao">Pani, Fábrica de pães e cafeteria</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">1 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Padaria Scala</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">2 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Praia de Iperoig</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">3 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Feira de Artesanato</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">3 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Terminal Rodoviário de Ubatuba</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">3 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Centro de Convenções de Ubatuba</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">4 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Pão de Açúcar, Ubatuba Mall</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">4 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Ubatuba Mall</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">5 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Farol do Cruzeiro</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">5 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Droga Raia</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">5 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Hospital Santa Casa de Ubatuba</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">5 min</span>
+                        </div>
+
+                        <div class="destino-item">
+                            <span class="descricao">Shibata Supermercados</span>
+                            <span class="separador-pontilhado"></span>
+                            <span class="tempo">7 min</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mapa" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.4347383090053!2d-45.077945899999996!3d-23.440400899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd51863cb88815%3A0x9a0052bd985d2978!2sR.%20Gast%C3%A3o%20Madeira%2C%20836%20-%20Umuarama%2C%20Ubatuba%20-%20SP%2C%2011690-189!5e1!3m2!1spt-BR!2sbr!4v1764555675336!5m2!1spt-BR!2sbr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
     </main>
-    <footer></footer>
-    <script src="/assets/scripts/global.js"></script>
+    <footer id="contato">
+        <div class="wrapper">
+            <div class="imobel-footer">
+
+                <img src="/images/logo-imobel.png" width="172" alt="IMOBEL"fetchpriority="low" loading="lazy">
+
+                <p>50 anos de tradição e excelência em Incorporação e construção.</p>
+                <div class="contato-leville-footer">
+                
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/5511930749710" target="_blank">
+                                <img src="/images/whatsapp-gold.png " width="32" alt="" fetchpriority="low" loading="lazy">
+                                11 <strong style="font-size: 20px;">3074-9710</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/f4KzT4kFkdYWgyLS9" target="_blank" >
+                                <img src="./images/gps-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
+                                Ed. Faria Lima Business Center – FLBC
+                                Av. Brigadeiro Faria Lima, 1509, 5º Andar
+                                Pinheiros – São Paulo – SP 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://grupoimobel.com.br"  target="_blank">
+                                <img src="./images/globo-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
+                                www.grupoimobel.com.br
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="leville-footer">
+                <img src="/images/logo-leville.png" width="172" alt="Le Ville"fetchpriority="low" loading="lazy">
+
+                <p>Inspirado pela arte, criado para quem valoriza o extraordinário.</p>
+
+                <div class="contato-leville-footer">
+                    <ul>
+                        <li>
+                            <a href="https://wa.link/8jz85p" target="_blank">
+                            <img src="/images/whatsapp-gold.png" alt="" fetchpriority="low" loading="lazy">
+                            71 <stron style="font-size: 20px; font-weight: 700;">9.9144-7770</stron>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li>
+                            <a href="https://m.facebook.com/p/Imobel-Incorporadora-100092198325178/?wtsid=rdr_0GIe9UVNhFTVaXrCr&hr=1"  target="_blank">
+                                <img src="./images/facebook-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/imobel_incorporadora?igsh=eGI0Ymt0NXU2MzU3"target="_blank">
+                                <img src="./images/instagram-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/grupoimobel/"  target="_blank">
+                                <img src="./images/linkedin-gold.png" width="32" alt="" fetchpriority="low" loading="lazy"/>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="contato-footer">
+                <h4>Entre em contato</h4>
+                <p>Aproveite condições exclusivas e vantagens diretamente com a Incorporadora!</p>
+                <div class="wrapper-form-dark">
+                <form id="contact-form-dark" class="body-form-dark">
+                    
+                    <input type="text" id="dark-name" name="name" placeholder="Digite aqui seu nome" required>
+
+                    <input type="email" id="dark-email" name="email" placeholder="seu@e-mail.com.br" required>
+
+                    <input type="tel" id="dark-phone" name="phone" placeholder="(DDD) 00000-000" required>
+                    
+                    <textarea id="dark-message" name="message" placeholder="Mensagem" rows="5" required></textarea>
+
+                    <div class="button-container">
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                    
+                    <div id="form-message-dark"></div>
+
+                </form>
+
+            </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <a href=""  target="_blank">Desenvolvido por Affinity</a>
+            </div>
+        </div>
+    </footer> 
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="/assets/scripts/global.js"></script>
+    <script defer src="/assets/scripts/swiper.js"></script>
+    
+    <!-- LightGallery planta ---->
+     <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            const imagens = document.querySelectorAll('.lg2');
+            let lightGalleryInstance2;
+
+            imagens.forEach(img => {
+                const wrapper = document.createElement('a');
+                wrapper.href = img.src;
+                wrapper.dataset.src = img.src;
+                wrapper.classList.add('lightgallery-item2');
+
+                img.parentNode.insertBefore(wrapper, img);
+                wrapper.appendChild(img);
+            });
+
+            lightGalleryInstance2 = lightGallery(document.body, {
+                selector: '.lightgallery-item2',
+                plugins: [lgZoom, lgThumbnail],
+                licenseKey: '0000-0000-000-0000',
+                speed: 300,
+            });
+            
+            const zoomButton = document.querySelector('.swiper-button-zoom-planta');
+
+            if(zoomButton){
+                zoomButton.addEventListener("click",()=>{
+                    const swiperContainer = document.querySelector('.swiperPlantas');
+
+                    if(swiperContainer){
+                        const activeSlide = swiperContainer.querySelector('.swiper-slide-active');
+
+                        if(activeSlide){
+                            const lightGalleryItem = activeSlide.querySelector('.lightgallery-item2');
+
+                            if(lightGalleryItem){
+                                const allLightGalleryItems = document.querySelectorAll('.lightgallery-item2');
+                                let index = -1;
+
+                                allLightGalleryItems.forEach((item, i) => {
+                                    if (item === lightGalleryItem) {
+                                        index = i;
+                                    }
+                                });
+
+                                if (index !== -1 && lightGalleryInstance2) {
+                                    lightGalleryInstance2.openGallery(index);
+                                }
+                            }
+                        }
+                    }
+                })
+            }
+        });
+    </script>
+
+
+
     
 </body>
 </html>

@@ -65,7 +65,7 @@
   text-decoration: none;
 
   --color-base-transp: #0c4f58e1;
-  --color-azul: #0c4f58;
+  --color-azul: #014D55;
   --color-titulo: #134e55;
   --color-azul-s: #3ea8b5;
   --color-laranja: #b99565;
@@ -76,7 +76,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 
@@ -131,14 +131,20 @@ header {
 }
 
 .menu-header .menu nav ul li a {
+  
   padding: 10px 12px;
   border: 2px solid transparent;
   color: var(--color-branco);
   transition: border-color 0.6s;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  color: #b9b9b9;
 }
 
 .menu-header .menu nav ul li a:hover {
   border-color: var(--color-laranja);
+  color: #fff;
 }
 
 .toggle-menu-mobile {
@@ -195,7 +201,6 @@ header {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
 }
 
 #hero .wrapper {
@@ -329,7 +334,7 @@ header {
 #empreendimento .wrapper .empreendimento-conteudo h2 {
   color: var(--color-laranja);
   font-weight: 200;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
@@ -383,12 +388,12 @@ header {
 
 .espaco-lazer-lista{
     padding: 90px 12px;
-    padding-top: 390px;
+    padding-top: 340px;
     background-color: var(--color-azul-s);
 }
 
 .espaco-lazer-lista .wrapper{
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -396,3 +401,364 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.espaco-lazer-lista .wrapper ul li{
+    text-align: center;
+}
+
+
+
+/*PLANTAS*/
+
+#plantas{
+  padding: 90px 12px;
+  background-color: var(--color-branco);
+  
+}
+
+
+#plantas .wrapper{
+  display: flex;
+  gap: 60px;
+}
+
+#plantas .planta-conteudo{
+  min-width: 30%;
+}
+
+
+
+#plantas .planta-conteudo h2{
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--color-laranja);
+  margin-bottom: 40px;
+}
+
+#plantas .planta-conteudo .lista-opcoes{
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+#plantas .planta-conteudo .lista-opcoes p{
+  color: var(--color-azul);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+
+
+/*IMPLANTACAO*/
+
+#implantacao{
+  background-image: linear-gradient(
+        to bottom, 
+        
+        /* Cor da metade superior */
+        #fff 0%,         
+        #fff 50%,        /* A cor branca termina exatamente na metade (50%) */
+        
+        /* Cor da metade inferior */
+        var(--color-azul) 50%, /* A cor azul começa exatamente na metade (50%) */
+        var(--color-azul) 100%)
+}
+
+#implantacao .wrapper{
+  width: 70%;
+  padding-bottom: 90px;
+}
+
+
+#implantacao .wrapper h2{
+  color: var(--color-laranja);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+
+#implantacao .conteudo-implatacao{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 60px;
+  padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+/*APRESENTACAO*/
+
+
+#apresentacao {
+    background-image: linear-gradient(
+        to left, /* Gradiente da Direita para a Esquerda */
+        
+        /* 1. Azul Escuro: Começa em 100% (direita) e domina até 20% do elemento */
+        var(--color-azul) 0%, 
+        var(--color-azul) 30%, /* Ponto onde a cor escura deve terminar seu domínio */
+        
+        /* 2. Azul Secundário: Transiciona suavemente do ponto 20% até 0% (esquerda) */
+        var(--color-azul-s) 100% 
+    );
+}
+
+#apresentacao {
+    background-image: linear-gradient(
+        250deg, /* Inclina o gradiente. Um ângulo entre 240deg e 270deg inclina para a esquerda. */
+        
+        /* 1. Azul Escuro (var(--color-azul)): Começa na parte superior-direita e domina até 30% da área total. */
+        var(--color-azul) 0%, 
+        var(--color-azul) 30%, /* Ponto de parada: o azul escuro cobre 30% da área total. */
+        
+        /* 2. Azul Secundário (var(--color-azul-s)): Começa a transição suave a partir de 30% até 100% da área total (canto inferior-esquerda). */
+        var(--color-azul-s) 100%
+    );
+}
+
+
+
+#apresentacao .wrapper{
+  padding: 90px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#apresentacao .wrapper h2{
+  color: var(--color-laranja);
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+#apresentacao .wrapper p{
+  margin: 0 auto;
+  width: 70%;
+  color: var(--color-branco);
+  padding-top:60px ;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOCALIZACAO*/
+
+
+#localizacao{
+
+
+}
+
+
+#localizacao .wrapper{
+    padding: 90px  12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+
+#localizacao .wrapper h2{
+  font-weight: 300;
+  color: var(--color-laranja);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+.endereco{
+  padding: 12px;
+  background-color: var(--color-laranja);
+  color: var(#014D55);
+  
+  z-index: 999;
+}
+
+
+#localizacao .wrapper .conteudo-localizacao{
+}
+
+
+#localizacao .conveniencia{
+  background-color: var(--color-azul);
+  margin-bottom: -200px;
+  z-index: 99;
+  
+}
+
+.conveniencia{
+  padding: 30px 12px;
+}
+.lista-destinos {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-azul);
+}
+
+@media (max-width: 768px) {
+    .lista-destinos {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+}
+
+.destino-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+
+.info-esquerda {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    
+}
+
+.descricao {
+    color: #fff;
+    word-break: break-word;
+    font-size: 16px;
+
+}
+
+
+
+.separador-pontilhado {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1.5px dotted rgba(255, 255, 255, 0.5);
+    margin: 0 8px;
+    height: 0;
+}
+
+.tempo {
+    flex-shrink: 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--color-azul);
+    border-top: 20px solid var(--color-laranja);
+    margin-top: -6px;
+}
+
+footer > .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 90px 12px;
+    gap: 30px;
+    color: var(--color-cinza);
+
+
+}
+
+footer > .wrapper h4{
+    color: var(--color-laranja);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+footer > .wrapper p{
+    line-height: 20px;
+}
+
+.imobel-footer,
+.leville-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    padding: 0 30px;
+
+}
+
+.imobel-footer{
+    padding-left: 0;
+}
+
+
+
+.contato-leville-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.social{
+    flex-direction: row!important;
+    margin-top: 20px;
+}
+
+.contato-leville-footer ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.contato-footer{
+    padding: 00px;
+}
+
+.contato-footer{
+    padding-right: 0;
+}
+
+
+.footer-bottom{
+    background-color:#013236;
+    padding:6px 12px;
+    text-align: right;
+
+}
+
