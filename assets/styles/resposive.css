@@ -257,6 +257,11 @@
     gap: 20px;
   }
   
+
+  .espaco-lazer-lista .wrapper ul img{
+    width: 60px;
+  }
+
   .espaco-lazer-lista .wrapper {
     width: 100%;
   }
@@ -341,5 +346,47 @@
   footer > .wrapper {
     padding: 40px 12px;
   }
+
+
+.carrossel-plantas{
+
+    width: 100%;
+	flex-direction: column
+}
+
+
+#plantas .swiper-wrapper{
+max-width:300px
+}
+
+
+#plantas .swiperPlantasThumbs{
+
+border:none!important
+}
+
+
+.swiperPlantasThumbs .swiper-slide-thumb-active::after{
+display:none
+}
+
+.swiperPlantasThumbs .swiper-wrapper{
+justify-items: center !important;
+padding:0px!important
+}
+
+
+#plantas .swiperPlantas {
+
+    min-width: 100%;
+}
+
+
+
+
+
+
+
+
 }
 
