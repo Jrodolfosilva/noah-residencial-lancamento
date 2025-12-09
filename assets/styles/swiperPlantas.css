@@ -3,7 +3,7 @@
 #plantas .swiperPlantas {
   height: auto;
   overflow: hidden;
-  min-width: 80%;
+  width: 100%;
 }
 
 .carrossel-plantas {
@@ -147,7 +147,7 @@
 
 
 #plantas .swiperPlantasThumbs {
-width:400px ;
+width:230px ;
 height: 100%;
 border-right: 2px solid var(--color-azul);
 }
