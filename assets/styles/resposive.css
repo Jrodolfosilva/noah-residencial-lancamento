@@ -39,8 +39,8 @@
     width: 90%; /* Aumenta a largura do conteúdo (form) */
     max-width: 450px;
     gap: 60px;
-    text-align: center; 
-    align-items: center;/* Centraliza o texto */
+    text-align: center;
+    align-items: center; /* Centraliza o texto */
   }
 
   #hero .wrapper .conteudo-hero h1 {
@@ -117,7 +117,7 @@
     min-width: 100%;
     text-align: center;
   }
-  
+
   #plantas .planta-conteudo .lista-opcoes {
     justify-content: center;
     gap: 30px;
@@ -151,9 +151,9 @@
   #localizacao .wrapper .conteudo-localizacao {
     text-align: center;
   }
-  
+
   .endereco {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   /* Converte a lista de conveniências em coluna única, caso a tela seja muito estreita */
@@ -174,37 +174,35 @@
     padding: 0; /* Remove padding lateral que existia */
     text-align: center;
   }
-  
-  .imobel-footer h4, 
-  .leville-footer h4, 
+
+  .imobel-footer h4,
+  .leville-footer h4,
   .contato-footer h4 {
-      text-align: center;
+    text-align: center;
   }
 
   .imobel-footer img,
   .leville-footer img {
     margin: 0 auto;
   }
-  
+
   .contato-leville-footer ul {
-      align-items: center;
+    align-items: center;
   }
-  
+
   .social {
-      justify-content: center;
+    justify-content: center;
   }
-  
+
   .footer-bottom {
-      text-align: center;
+    text-align: center;
   }
 }
-
 
 /* ========================================= */
 /* === AJUSTES PARA SMARTPHONES (< 576px) === */
 /* ========================================= */
 @media screen and (max-width: 576px) {
-  
   /* Ajustes de tipografia */
   h1 {
     font-size: 32px;
@@ -212,7 +210,7 @@
   h2 {
     font-size: 26px;
   }
-  
+
   .head-form h4 {
     font-size: 24px;
   }
@@ -221,7 +219,7 @@
   #hero .wrapper .conteudo-hero {
     gap: 40px;
   }
-  
+
   .head-form span {
     font-size: 16px;
     margin-top: 15px;
@@ -240,25 +238,24 @@
     margin-bottom: 20px;
     font-size: 28px;
   }
-  
+
   /* --- SEÇÃO LAZER --- */
   #lazer {
-      padding: 40px 12px;
+    padding: 40px 12px;
   }
-  
+
   .espaco-lazer-lista {
     padding-top: 150px; /* Mais ajuste para telas menores */
     padding-bottom: 40px;
   }
-  
+
   .espaco-lazer-lista .wrapper ul {
     flex-wrap: wrap; /* Permite que os ícones quebrem a linha */
     justify-content: space-around;
     gap: 20px;
   }
-  
 
-  .espaco-lazer-lista .wrapper ul img{
+  .espaco-lazer-lista .wrapper ul img {
     width: 60px;
   }
 
@@ -270,7 +267,7 @@
   #plantas {
     padding: 60px 12px;
   }
-  
+
   #plantas .planta-conteudo h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -280,13 +277,13 @@
     justify-content: space-around;
     gap: 20px;
   }
-  
+
   /* --- SEÇÃO IMPLANTAÇÃO --- */
   #implantacao .wrapper {
     width: 100%;
     padding-bottom: 60px;
   }
-  
+
   #implantacao .conteudo-implatacao {
     padding: 30px 0;
   }
@@ -295,13 +292,13 @@
   #apresentacao .wrapper {
     padding: 60px 12px;
   }
-  
+
   #apresentacao .wrapper h2 {
     font-size: 28px;
     line-height: 40px;
     margin-bottom: 20px;
   }
-  
+
   #apresentacao .wrapper p {
     padding-top: 30px;
   }
@@ -310,18 +307,18 @@
   #localizacao .wrapper {
     padding: 40px 12px;
   }
-  
+
   #localizacao .wrapper h2 {
     font-size: 28px;
     margin-bottom: 20px;
   }
-  
+
   .destino-item {
-      flex-direction: column; /* Coloca a descrição, pontilhado e tempo em linhas separadas */
-      align-items: flex-start;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    flex-direction: column; /* Coloca a descrição, pontilhado e tempo em linhas separadas */
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
   }
 
   .separador-pontilhado {
@@ -329,17 +326,17 @@
   }
 
   .info-esquerda {
-      width: 100%;
+    width: 100%;
   }
 
   .descricao {
-      font-weight: 400;
+    font-weight: 400;
   }
-  
+
   .tempo {
-      font-weight: 600;
-      color: var(--color-laranja);
-      margin-top: 5px;
+    font-weight: 600;
+    color: var(--color-laranja);
+    margin-top: 5px;
   }
 
   /* --- FOOTER --- */
@@ -347,46 +344,91 @@
     padding: 40px 12px;
   }
 
-
-.carrossel-plantas{
-
+  .carrossel-plantas {
     width: 100%;
-	flex-direction: column
-}
+    flex-direction: column;
+  }
 
+  #plantas .swiper-wrapper {
+    max-width: 300px;
+  }
 
-#plantas .swiper-wrapper{
-max-width:300px
-}
+  #plantas .swiperPlantasThumbs {
+    border: none !important;
+  }
 
+  .swiperPlantasThumbs .swiper-slide-thumb-active::after {
+    display: none;
+  }
 
-#plantas .swiperPlantasThumbs{
+  .swiperPlantasThumbs .swiper-wrapper {
+    justify-items: center !important;
+    padding: 0px !important;
+  }
 
-border:none!important
-}
-
-
-.swiperPlantasThumbs .swiper-slide-thumb-active::after{
-display:none
-}
-
-.swiperPlantasThumbs .swiper-wrapper{
-justify-items: center !important;
-padding:0px!important
-}
-
-
-#plantas .swiperPlantas {
-
+  #plantas .swiperPlantas {
     min-width: 100%;
+  }
+
+  #plantas .swiperPlantasThumbs .swiper-wrapper {
+    display: flex !important;
+  }
 }
 
-
-
-
-
-
-
-
+.espaco-lazer-lista .wrapper ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.swiperLazer {
+  min-height: auto;
+  height: 100vh;
+  margin-bottom: -390px;
+}
+
+.swiper-pagination-lazer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Importante, quando for refatorar o css colocar */
+@media (max-width: 768px) {
+  .swiperLazer {
+    height: 50vh;
+    margin-bottom: -30vh;
+  }
+
+  .youtube-container {
+    height: auto;
+  }
+  #implantacao {
+    background-image: none;
+  }
+
+  #implantacao .swiper-wrapper {
+    height: fit-content;
+  }
+
+  #implantacao .swiper-wrapper p {
+    color: var(--color-laranja) !important;
+  }
+  #implantacao .implantacao-controllers {
+    margin-top: 0;
+  }
+
+  .espaco-lazer-lista {
+    padding-top: 157px;
+  }
+
+  #plantas .swiperPlantasThumbs {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .espaco-lazer-lista {
+    padding-top: 90px;
+  }
+}

@@ -1,7 +1,7 @@
 /* Declaração para Campton Black (900) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonBlack.otf") format("opentype");
+  src: url("../fonts/CamptonBlack.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Declaração para Campton Bold (700) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonBold.otf") format("opentype");
+  src: url("../fonts/CamptonBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* Declaração para Campton Bold Italic (700 Itálico) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonBoldItalic.otf") format("opentype");
+  src: url("../fonts/CamptonBoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
@@ -27,7 +27,7 @@
 /* Declaração para Campton SemiBold (600) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonSemiBold.otf") format("opentype");
+  src: url("../fonts/CamptonSemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
@@ -35,7 +35,7 @@
 /* Declaração para Campton Medium (500) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonMedium.otf") format("opentype");
+  src: url("../fonts/CamptonMedium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -43,7 +43,7 @@
 /* Declaração para Campton Book (Geralmente 400 - Regular) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonBook.otf") format("opentype");
+  src: url("../fonts/CamptonBook.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -51,7 +51,7 @@
 /* Declaração para Campton Light (300) */
 @font-face {
   font-family: "Campton";
-  src: url("/assets/fonts/CamptonLight.otf") format("opentype");
+  src: url("../fonts/CamptonLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
@@ -65,7 +65,7 @@
   text-decoration: none;
 
   --color-base-transp: #0c4f58e1;
-  --color-azul: #014D55;
+  --color-azul: #014d55;
   --color-titulo: #134e55;
   --color-azul-s: #3ea8b5;
   --color-laranja: #b99565;
@@ -75,14 +75,13 @@
   scroll-behavior: smooth;
 }
 
-body{
-  overflow-x: hidden;
+body {
+  overflow-x: hidden !important;
 }
 
-b{
-    font-weight: 700;
+b {
+  font-weight: 700;
 }
-
 
 h1 {
   font-size: 41px;
@@ -106,7 +105,7 @@ span {
   margin: 0 auto;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   align-items: center;
 }
 
@@ -114,7 +113,9 @@ span {
 
 header {
   background-color: var(--color-azul);
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .menu-header {
@@ -135,7 +136,6 @@ header {
 }
 
 .menu-header .menu nav ul li a {
-  
   padding: 10px 12px;
   border: 2px solid transparent;
   color: var(--color-branco);
@@ -154,7 +154,7 @@ header {
 
 .toggle-menu-mobile {
   display: none; /* Esconde por padrão no desktop */
-  font-size: 1.5rem; /* Ajuste o tamanho do texto ou ícone */
+  font-size: 1.5rem; /* Ajuste o tamanho do tamanho do texto ou ícone */
   cursor: pointer;
   z-index: 100; /* Garante que fique acima dos outros elementos */
   color: var(--color-laranja); /* Se você usar um ícone, este será a cor */
@@ -202,10 +202,11 @@ header {
 /*SECAO HERO*/
 
 #hero {
-  background-image: url("/assets/images/banner-hero.webp");
+  background-image: url("../images/banner-hero.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 90px;
 }
 
 #hero .wrapper {
@@ -219,7 +220,7 @@ header {
   width: 450px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
 .wrapper-form {
@@ -327,14 +328,12 @@ header {
   gap: 90px;
   align-items: end;
   color: var(--color-branco);
-   
-
 }
 
 #empreendimento .wrapper .empreendimento-conteudo {
-    min-width: 30%;
-    margin-bottom: -60px;
-    padding-top: 52px;
+  min-width: 30%;
+  margin-bottom: -60px;
+  padding-top: 52px;
 }
 
 #empreendimento .wrapper .empreendimento-conteudo h2 {
@@ -348,209 +347,174 @@ header {
 }
 
 .imagem-empreendimento img {
-    width: 813px;
-    margin-top: -200px;
-    margin-bottom: -184px;
-    margin-right: -165px;
+  width: 813px;
+  margin-top: -200px;
+  margin-bottom: -184px;
+  margin-right: -165px;
 }
-
-
-
-
-
 
 /*LAZER*/
 
-
-#lazer{
-    padding: 90px 12px;
-    background: linear-gradient(
-    to right,
-    var(--color-azul), 
-    #3ea8b5 
-);
+#lazer {
+  padding: 90px 12px;
+  background: linear-gradient(to right, var(--color-azul), #3ea8b5);
 }
 
-.lazer-conteudo{
-    display: flex;
-    padding-top: 90px;
-    width: 90%;
-    gap: 90px;
-    margin: 0 auto;
-    color: #fff;
+.lazer-conteudo {
+  display: flex;
+  padding-top: 90px;
+  width: 90%;
+  gap: 90px;
+  margin: 0 auto;
+  color: #fff;
 }
 
-.headline-lazer{
+.headline-lazer {
   min-width: fit-content;
   text-align: right;
 }
 
-.headline-lazer h2{
+.headline-lazer h2 {
   color: var(--color-laranja);
   font-weight: 300;
 }
-.op img{
+.op img {
   /*usar para reduzir o width no mobile*/
 }
-.espaco-lazer img{
-    margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: -390px;
-    display: block;
-    width: 100%;
-    object-fit: cover;
-
+.espaco-lazer img {
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: -390px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
-.espaco-lazer-lista{
-    padding: 90px 12px;
-    padding-top: 340px;
-    background-color: var(--color-azul-s);
+.espaco-lazer-lista {
+  padding: 90px 12px;
+  padding-top: 340px;
+  background-color: var(--color-azul-s);
 }
 
-.espaco-lazer-lista .wrapper{
-    width: 50%;
+.espaco-lazer-lista .wrapper {
+  width: 50%;
 }
 
-
-.espaco-lazer-lista .wrapper ul{
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
+.espaco-lazer-lista .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
 }
 
-
-
-
-.espaco-lazer-lista .wrapper ul li p{
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    font-size: 22px;
-    margin-top: 20px;
+.espaco-lazer-lista .wrapper ul li p {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
 }
-
 
 /*PLANTAS*/
 
-#plantas{
+#plantas {
   padding: 90px 12px;
   background-color: var(--color-branco);
-  
 }
 
-
-#plantas .wrapper{
+#plantas .wrapper {
   display: flex;
   gap: 60px;
 }
 
-#plantas .planta-conteudo{
+#plantas .planta-conteudo {
   min-width: 30%;
 }
 
-
-
-#plantas .planta-conteudo h2{
+#plantas .planta-conteudo h2 {
   font-weight: 300;
   text-transform: uppercase;
   color: var(--color-laranja);
   margin-bottom: 40px;
 }
 
-#plantas .planta-conteudo .lista-opcoes{
+#plantas .planta-conteudo .lista-opcoes {
   display: flex;
   gap: 60px;
   justify-content: space-between;
   padding-top: 40px;
 }
 
-#plantas .planta-conteudo .lista-opcoes p{
+#plantas .planta-conteudo .lista-opcoes p {
   color: var(--color-azul);
   font-size: 16px;
   font-weight: 600;
 }
 
-
-
-
-
 /*IMPLANTACAO*/
 
-#implantacao{
+#implantacao {
   background-image: linear-gradient(
-        to bottom, 
-        
-        /* Cor da metade superior */
-        #fff 0%,         
-        #fff 50%,        /* A cor branca termina exatamente na metade (50%) */
-        
-        /* Cor da metade inferior */
-        var(--color-azul) 50%, /* A cor azul começa exatamente na metade (50%) */
-        var(--color-azul) 100%)
+    to bottom,
+
+    /* Cor da metade superior */ #fff 0%,
+    #fff 50%,
+
+    /* A cor branca termina exatamente na metade (50%) */
+      /* Cor da metade inferior */ var(--color-azul) 50%,
+    /* A cor azul começa exatamente na metade (50%) */ var(--color-azul) 100%
+  );
 }
 
-#implantacao .wrapper{
+#implantacao .wrapper {
   width: 70%;
   padding-bottom: 90px;
 }
 
-
-#implantacao .wrapper h2{
+#implantacao .wrapper h2 {
   color: var(--color-laranja);
   text-transform: uppercase;
   font-weight: 300;
 }
 
-
-
-#implantacao .conteudo-implatacao{
+#implantacao .conteudo-implatacao {
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 60px;
   padding: 60px 0;
 }
 
-
-
-
-
-
-
-
-
 /*APRESENTACAO*/
 
-
 #apresentacao {
-    background-image: linear-gradient(
-        to left, /* Gradiente da Direita para a Esquerda */
-        
-        /* 1. Azul Escuro: Começa em 100% (direita) e domina até 20% do elemento */
-        var(--color-azul) 0%, 
-        var(--color-azul) 30%, /* Ponto onde a cor escura deve terminar seu domínio */
-        
-        /* 2. Azul Secundário: Transiciona suavemente do ponto 20% até 0% (esquerda) */
-        var(--color-azul-s) 100% 
-    );
+  background-image: linear-gradient(
+    to left,
+
+    /* Gradiente da Direita para a Esquerda */
+      /* 1. Azul Escuro: Começa em 100% (direita) e domina até 20% do elemento */
+      var(--color-azul) 0%,
+    var(--color-azul) 30%,
+
+    /* Ponto onde a cor escura deve terminar seu domínio */
+      /* 2. Azul Secundário: Transiciona suavemente do ponto 20% até 0% (esquerda) */
+      var(--color-azul-s) 100%
+  );
 }
 
 #apresentacao {
-    background-image: linear-gradient(
-        250deg, /* Inclina o gradiente. Um ângulo entre 240deg e 270deg inclina para a esquerda. */
-        
-        /* 1. Azul Escuro (var(--color-azul)): Começa na parte superior-direita e domina até 30% da área total. */
-        var(--color-azul) 0%, 
-        var(--color-azul) 30%, /* Ponto de parada: o azul escuro cobre 30% da área total. */
-        
-        /* 2. Azul Secundário (var(--color-azul-s)): Começa a transição suave a partir de 30% até 100% da área total (canto inferior-esquerda). */
-        var(--color-azul-s) 100%
-    );
+  background-image: linear-gradient(
+    250deg,
+    /* Inclina o gradiente. Um ângulo entre 240deg e 270deg inclina para a esquerda. */
+      /* 1. Azul Escuro (var(--color-azul)): Começa na parte superior-direita e domina até 30% da área total. */
+      var(--color-azul) 0%,
+    var(--color-azul) 30%,
+
+    /* Ponto de parada: o azul escuro cobre 30% da área total. */
+      /* 2. Azul Secundário (var(--color-azul-s)): Começa a transição suave a partir de 30% até 100% da área total (canto inferior-esquerda). */
+      var(--color-azul-s) 100%
+  );
 }
 
-
-
-#apresentacao .wrapper{
+#apresentacao .wrapper {
   padding: 90px 12px;
 
   display: flex;
@@ -558,8 +522,7 @@ header {
   align-items: center;
 }
 
-
-#apresentacao .wrapper h2{
+#apresentacao .wrapper h2 {
   color: var(--color-laranja);
   font-weight: 300;
   margin-bottom: 30px;
@@ -568,275 +531,234 @@ header {
   text-align: center;
 }
 
-#apresentacao .wrapper p{
+#apresentacao .wrapper p {
   margin: 0 auto;
   width: 70%;
   color: var(--color-branco);
-  padding-top:60px ;
+  padding-top: 60px;
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*LOCALIZACAO*/
 
-
-#localizacao{
+#localizacao {
   position: relative;
   margin-bottom: -100px;
   z-index: 9;
-
 }
 
+#localizacao .wrapper {
+  padding: 90px 12px;
 
-#localizacao .wrapper{
-    padding: 90px  12px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 }
 
-
-#localizacao .wrapper h2{
+#localizacao .wrapper h2 {
   font-weight: 300;
   color: var(--color-laranja);
   text-transform: uppercase;
   margin-bottom: 40px;
 }
 
-
-.endereco{
+.endereco {
   padding: 12px;
   background-color: var(--color-laranja);
-  color: var(#014D55);
+  color: var(#014d55);
   margin-top: 30px;
-  }
-
-
-#localizacao .wrapper .conteudo-localizacao{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
+#localizacao .wrapper .conteudo-localizacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-#localizacao .conveniencia{
+#localizacao .conveniencia {
   background-color: var(--color-azul);
   z-index: 99;
-  
 }
 
-.conveniencia{
+.conveniencia {
   padding: 30px 12px;
   margin-bottom: -50px;
 }
 .lista-destinos {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 900px;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: var(--color-azul);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color-azul);
 }
 
 @media (max-width: 768px) {
-    .lista-destinos {
-        grid-template-columns: 1fr;
-        grid-column-gap: 0;
-    }
+  .lista-destinos {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
 }
 
 .destino-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    font-size: 16px;
-    font-weight: 300;
-    
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
-
 .info-esquerda {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    gap: 10px;
-    
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
 }
 
 .descricao {
-    color: #fff;
-    word-break: break-word;
-    font-size: 16px;
-
+  color: #fff;
+  word-break: break-word;
+  font-size: 16px;
 }
 
-
-
 .separador-pontilhado {
-    content: "";
-    flex-grow: 1;
-    border-bottom: 1.5px dotted rgba(255, 255, 255, 0.5);
-    margin: 0 8px;
-    height: 0;
+  content: "";
+  flex-grow: 1;
+  border-bottom: 1.5px dotted rgba(255, 255, 255, 0.5);
+  margin: 0 8px;
+  height: 0;
 }
 
 .tempo {
-    flex-shrink: 0;
-    font-weight: 300;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
+  flex-shrink: 0;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
 }
-
-
-
-
-
 
 /*FOOTER*/
 
-footer{
+footer {
   background-color: var(--color-azul);
   border-top: 20px solid var(--color-laranja);
   margin-top: -4px;
 }
 
-
 /* --- LAYOUT PRINCIPAL (DOIS COLUNAS) --- */
-footer > .wrapper{
-    display: grid;
-    /* 1.5fr para a coluna da esquerda (info/logos) e 1fr para o formulário */
-    grid-template-columns: 1.5fr 1fr; 
-    padding: 90px 12px;
-    gap: 60px; 
-    color: var(--color-cinza);
+footer > .wrapper {
+  display: grid;
+  /* 1.5fr para a coluna da esquerda (info/logos) e 1fr para o formulário */
+  grid-template-columns: 1.5fr 1fr;
+  padding: 90px 12px;
+  gap: 60px;
+  color: var(--color-cinza);
 }
 
 /* Responsividade: Volta para coluna única em telas menores */
 @media (max-width: 992px) {
-    footer > .wrapper {
-        grid-template-columns: 1fr; 
-        gap: 30px;
-    }
+  footer > .wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 /* --- COLUNA ESQUERDA (INFO-CONTATO-FOOTER) --- */
 
 .info-contato-footer {
-    display: flex;
-    flex-direction: column;
-    /* Adiciona espaço entre o grid de logos/contato e o texto legal */
-    gap: 40px; 
+  display: flex;
+  flex-direction: column;
+  /* Adiciona espaço entre o grid de logos/contato e o texto legal */
+  gap: 40px;
 }
-
 
 /* --- GRID INTERNO (LOGOS + CONTATO) --- */
 
 /* Esta é a linha 1 da coluna da esquerda, dividida em duas sub-colunas */
 .logos-and-contact-grid {
-    display: grid;
-    /* O grid 1fr 1fr solicitado */
-    grid-template-columns: 1fr 1fr; 
-    gap: 30px; 
-    /* Garante que o grid interno seja coluna única em telas muito pequenas */
-    /* Para telas de tablet para baixo, vamos quebrar */
-    
+  display: grid;
+  /* O grid 1fr 1fr solicitado */
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  /* Garante que o grid interno seja coluna única em telas muito pequenas */
+  /* Para telas de tablet para baixo, vamos quebrar */
 }
 @media (max-width: 768px) {
-    .logos-and-contact-grid {
-        grid-template-columns: 1fr; /* Coluna única em telas menores */
-        gap: 20px;
-    }
-    /* Centraliza os itens quando estiver em coluna única */
-    .sub-col-logo-social,
-    .sub-col-mrk-contact {
-        align-items: center;
-        text-align: center;
-    }
+  .logos-and-contact-grid {
+    grid-template-columns: 1fr; /* Coluna única em telas menores */
+    gap: 20px;
+  }
+  /* Centraliza os itens quando estiver em coluna única */
+  .sub-col-logo-social,
+  .sub-col-mrk-contact {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* --- SUB-COLUNA 1 (NOAH + REDES) --- */
 
 .sub-col-logo-social {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Espaço entre a logo e os ícones */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espaço entre a logo e os ícones */
 }
 .sub-col-logo-social img {
-   
 }
 
 /* Estilo para a UL das Redes Sociais */
 .social-icons-footer {
-    display: flex;
-    list-style: none; /* Remove bolinhas da UL */
-    padding: 0;
-    margin: 0;
-    gap: 15px; /* Espaço entre os ícones */
+  display: flex;
+  list-style: none; /* Remove bolinhas da UL */
+  padding: 0;
+  margin: 0;
+  gap: 15px; /* Espaço entre os ícones */
 }
 
 /* --- SUB-COLUNA 2 (MRK + CONTATO) --- */
 
 .sub-col-mrk-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espaço entre os elementos dessa coluna */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre os elementos dessa coluna */
 }
 
 /* Telefone (Estilo da imagem) */
 .contato-telefone {
-    margin-top: 20px; 
+  margin-top: 20px;
 }
 .numero-telefone {
-    color: #fff; 
-    font-size: 32px; 
-    font-weight: 700;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 /* Handle Instagram */
 .handle-social-mrk {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Texto Legal (Abaixo do Grid Interno) */
 .texto-legal-footer p {
-    color: var(--color-cinza); 
-    line-height: 1.5;
-    font-size: 14px;
+  color: var(--color-cinza);
+  line-height: 1.5;
+  font-size: 14px;
 }
-
 
 /* --- ESTILOS DO FORMULÁRIO (contato-footer - Mantidos da resposta anterior) --- */
 
-.contato-footer h4{
-    color: var(--color-laranja); 
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.contato-footer h4 {
+  color: var(--color-laranja);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
-.contato-footer p{
-    color: #fff;
-    font-size: 16px;
-    margin-bottom: 20px;
+.contato-footer p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 /* ... (outros estilos do form dark, inputs e botão) ... */
 
@@ -923,95 +845,65 @@ footer > .wrapper{
   border: 1px solid #f5c6cb;
 }
 
-
-.footer-bottom{
-    background-color:#013236;
-    padding:6px 12px;
-    text-align: right;
-
+.footer-bottom {
+  background-color: #013236;
+  padding: 6px 12px;
+  text-align: right;
 }
 
-.footer-bottom a{
-    color: var(--color-azul-s);
-
+.footer-bottom a {
+  color: var(--color-azul-s);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.youtube-container{
+.youtube-container {
   width: 100%;
   height: 600px;
   z-index: 99;
 }
 
-.youtube-container iframe{
+.youtube-container iframe {
   z-index: 2;
   position: relative;
 }
 
-.layer-video{
+.layer-video {
   position: relative;
   width: 100%;
 }
 
+/*
 .layer-video::after{
   display: block;
   position: absolute;
   z-index: 1;
   content: "";
-  background-image:url("/assets/images/background-layer.webp");
+  background-image:url("../images/background-layer.webp");
   width: 300px;
   height: 400px;
   background-size: contain;
   right: -20%;
 
 }
+*/
 
-
-
-
-@media (max-width:760px) {
-  .op img{
+@media (max-width: 760px) {
+  .op img {
     max-width: 100%;
   }
 
-  .layer-video{
-    display:none;
-  }
-
-  .conteudo-hero img{
+  .layer-video {
     display: none;
   }
 
-  .headline-lazer{
-    text-align: left!important;
+  .conteudo-hero img {
+    display: none;
   }
 
-  footer{
-    text-align: center!important;
-    
+  .headline-lazer {
+    text-align: left !important;
+  }
+
+  footer {
+    text-align: center !important;
   }
 }

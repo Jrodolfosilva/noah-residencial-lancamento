@@ -63,3 +63,25 @@ function SwiperImplatacao() {
   });
 }
 SwiperImplatacao();
+
+
+
+
+
+function SwiperLazer() {
+ 
+  const swiperImplatacao = new Swiper(".swiperLazer", {
+    spaceBetween: 10,
+    preloadImages: false,
+    autoplay:true,
+    pagination: {
+      el: ".swiper-pagination-lazer", // Seletor do elemento HTML
+      clickable: true, 
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-lazer",
+      prevEl: ".swiper-button-prev-lazer",
+    },
+  });
+}
+SwiperLazer();

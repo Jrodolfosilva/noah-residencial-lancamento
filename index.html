@@ -6,23 +6,23 @@
     <title>Noah Residencial</title>
     <meta name="description" content="Seu refúgio urbano com alma litorânea"/>
     <link   rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/assets/styles/swiperPlantas.css"/>
-    <link rel="stylesheet" href="/assets/styles/swiperImplantacao.css"/>
+    <link rel="stylesheet" href="assets/styles/swiperPlantas.css"/>
+    <link rel="stylesheet" href="assets/styles/swiperImplantacao.css"/>
     
     
     <!--Importação LightGallery---->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
     
     
-    <link rel="stylesheet" href="/assets/styles/global.css"/>
-    <link rel="stylesheet" href="/assets/styles/resposive.css"/>
+    <link rel="stylesheet" href="assets/styles/global.css"/>
+    <link rel="stylesheet" href="assets/styles/resposive.css"/>
 
 
     <!--Preload-->
 
-    <link rel="preload" href="/assets/images/logo2-noah.webp" as="image">
-    <link rel="preload" href="/assets/images/Logo-Noah.webp" as="image">
-    <link rel="preload" href="/assets/images/banner-hero.webp" as="image">
+    <link rel="preload" href="assets/images/logo2-noah.webp" as="image">
+    <link rel="preload" href="assets/images/Logo-Noah.webp" as="image">
+    <link rel="preload" href="assets/images/banner-hero.webp" as="image">
 
 
 </head>
@@ -31,7 +31,7 @@
         <div class="menu-header">
             <div class="wrapper menu">
                 <a href="/">
-                    <img src="/assets/images/Logo-Noah.webp" fetchpriority="high" width="200" height="70" alt="Logo Leville"/>
+                    <img src="assets/images/Logo-Noah.webp" fetchpriority="high" width="200" height="70" alt="Logo Leville"/>
                 </a>
                 <nav id="menuPrincipal">
                     <div class="toggle-menu-mobile">
@@ -67,7 +67,7 @@
         <section class="hero" id="hero">
             <div class="wrapper">
                <div class="conteudo-hero">
-                    <img src="/assets/images/logo2-noah.webp" fetchpriority="high" loading="eager" width="300" height="107" alt="Noah Logomarca">
+                    <img src="assets/images/logo2-noah.webp" fetchpriority="high" loading="eager" width="300" height="107" alt="Noah Logomarca">
                     <h1>Seu refúgio urbano com alma <b>litorânea</b></h1>
                     <div class="wrapper-form">
 
@@ -117,7 +117,7 @@
                     </p>
                 </div>
                 <div class="imagem-empreendimento">
-                    <img src="/assets/images/sobre.webp" fetchpriority="low" loading="lazy" class="sobre" alt="" >
+                    <img src="assets/images/sobre.webp" fetchpriority="low" loading="lazy" class="sobre" alt="" >
                 </div>
             </div>
         </section>
@@ -125,7 +125,7 @@
         <section class="lazer" id="lazer">
             <div class="wrapper">
                 <div class="op">
-                    <img src="/assets/images/opcoes-Noah.webp" loading="lazy" fetchpriority="low" width="350" alt="">
+                    <img src="assets/images/opcoes-Noah.webp" loading="lazy" fetchpriority="low" width="350" alt="">
                 </div>
                 <div class="lazer-conteudo">
                     <div class="headline-lazer">
@@ -146,23 +146,45 @@
                 </div>
 
                 <div class="espaco-lazer">
-                    <img src="/assets/images/piscina.webp" loading="lazy" fetchpriority="low" height="600" alt="Espaço lazer Noah">
+                    <div class="swiper swiperLazer">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/churasqueira.webp" class="" fetchpriority="low" loading="lazy"   alt="Planta 01" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/piscina-cima.webp" class="" fetchpriority="low" loading="lazy"   alt="Planta 01" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/piscina-lado.webp" class="" fetchpriority="low" loading="lazy"   alt="Planta 01" />
+                            </div>
+                        </div>
+                         <!-- Botões de navegação lazer -->
+                     <div class="swiper-button-nav">
+                        <div class="swiper-button-prev-lazer"></div>
+                        <div class="swiper-button-next-lazer"></div>
+                     </div>
+
+                    </div>
+                    
+
                 </div>
-            </div>
+
         </section>
         <div class="espaco-lazer-lista">
+                <div class="swiper-pagination-lazer" style="margin-top: -30px; margin-bottom: 30px;"></div>
+
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="/assets/images/piscina.png" loading="lazy" fetchpriority="low" width="124" alt="">
+                        <img src="assets/images/piscina.png" loading="lazy" fetchpriority="low" width="124" alt="">
                             <p>Piscina</p>
                     </li>
                      <li>
-                        <img src="/assets/images/cadeira-de-praia.png" loading="lazy" fetchpriority="low" width="124" alt="">
+                        <img src="assets/images/cadeira-de-praia.png" loading="lazy" fetchpriority="low" width="124" alt="">
                         <p>Deck</p>
                     </li>
                     <li>
-                        <img src="/assets/images/churrasco.png" loading="lazy" fetchpriority="low" width="124" alt="">
+                        <img src="assets/images/churrasco.png" loading="lazy" fetchpriority="low" width="124" alt="">
                         <p>churrasqueira</p>
                     </li>
                 </ul>
@@ -186,15 +208,15 @@
                     </div>
                     <ul class="lista-opcoes">
                         <li>
-                            <img src="/assets/images/area.png" loading="lazy" fetchpriority="low" width="60px" height="45" alt="">
+                            <img src="assets/images/area.png" loading="lazy" fetchpriority="low" width="60px" height="45" alt="">
                             <p>60,77m<sup>2</sup></p>
                         </li>
                         <li>
-                            <img src="/assets/images/cama-de-casal.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
+                            <img src="assets/images/cama-de-casal.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
                             <p>2 Suítes</p>
                         </li>
                         <li>
-                            <img src="/assets/images/garagem.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
+                            <img src="assets/images/garagem.png" loading="lazy" fetchpriority="low" width="60px" height="50" alt="">
                             <p>1 ou 2 Vagas</p>
                         </li>
                     </ul>
@@ -204,17 +226,30 @@
 
                     <div class="swiper swiperPlantasThumbs" style="margin-bottom: 40px;">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide"><span class="step-planta">Planta</span></div>
+                        <div class="swiper-slide"><span class="step-planta">Planta 1</span></div>
+                        <div class="swiper-slide"><span class="step-planta">Planta 2</span></div>
+                        <div class="swiper-slide"><span class="step-planta">Planta 3</span></div>
+                       
+
                         </div>
                     </div>
 
                     <div class="swiper swiperPlantas">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/images/planta01.webp" class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
-                                <p style="padding-top: 30px;"><b style="font-weight: 500; ">Planta tipo 2</b> | 60,77m | 2 Suítes | 1 ou 2 vagas</p>
+                                <img src="assets/images/final05.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
+                                <p style="padding-top: 30px;"><b style="font-weight: 500; ">Planta Final 05</b> | 57,84m | 2 Suítes | 1 Dormitório | 1 vaga</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/final07.png"  class="lg2" loading="lazy" fetchpriority="low" alt="Planta 01" />
+                                <p style="padding-top: 30px;"><b style="font-weight: 500; ">Planta Final 05</b> | 35,00m | LOFT | 1 vaga</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/final08.png" class="lg2"  loading="lazy" fetchpriority="low" alt="Planta 01" />
+                                <p style="padding-top: 30px;"><b style="font-weight: 500; ">Planta Final 05</b> | 35,00m | LOFT | 1 vaga</p>
                             </div>
                         </div>
+
 
                   
  
@@ -244,17 +279,17 @@
                     <div class="swiper swiperImplatacao">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/assets/images/implantacao02.webp"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                                <img src="assets/images/implantacao02.webp"  class="lg3" loading="lazy" fetchpriority="low" alt="1"  />
                                 <p style="text-align: center; padding-top: 30px; color: #fff;">Estacionamento</p>
                             </div>
 
                             <div class="swiper-slide">
-                                <img src="/assets/images/implanta.webp" class="lg3" loading="lazy" fetchpriority="low" alt="Térreo" />
+                                <img src="assets/images/implanta.webp" class="lg3" loading="lazy" fetchpriority="low" alt="" />
                                 <p style="text-align: center; padding-top: 30px; color: #fff;">Planta </p>
 
                             </div>
                             <div class="swiper-slide">
-                                <img src="/assets/images/implantacao03.webp"  class="lg3" loading="lazy" fetchpriority="low" alt="Área comum 1"  />
+                                <img src="assets/images/implantacao03.webp"  class="lg3" loading="lazy" fetchpriority="low" alt=""  />
                                 <p style="text-align: center; padding-top: 30px; color: #fff;">Planta </p>
                             </div>
                             
@@ -269,7 +304,7 @@
                      </div>
 
                      <div class="implantacao-controllers">
-                        <button class="swiper-button-zoom-implantacao">Vizualizar <img src="/assets/images/lupa-branca.png"  alt=""></button>
+                        <button class="swiper-button-zoom-implantacao">Vizualizar <img src="assets/images/lupa-branca.png"  alt=""></button>
                         <div class="swiper-pagination"></div>
 
 
@@ -292,6 +327,12 @@
                 
                 <div class="youtube-container"> 
                     <div class="layer-video"></div>
+
+                    <img src="assets/images/video.png" width="100%" alt="">
+
+
+                    <!--
+                    
                     <iframe class="youtube-iframe" 
                     width="100%" height="100%"
                         src="https://www.youtube.com/embed/F0bf0b1l7a0" 
@@ -301,6 +342,9 @@
                         referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen>
                     </iframe>
+                    
+                    -->
+                    
                 </div>
                 
                 <p>O Noah representa o novo modo de viver Ubatuba: Lazer exclusivo no alto, conforto em cada detalhe e a conveniência de estar perto de tudo.</p>
@@ -420,26 +464,26 @@
                 <div class="logos-and-contact-grid">
                     
                     <div class="sub-col-logo-social">
-                        <img src="/assets/images/logo-noah.webp" alt="Noah Residencial" width="172" fetchpriority="low" loading="lazy">
+                        <img src="assets/images/Logo-Noah.webp" alt="Noah Residencial" width="172" fetchpriority="low" loading="lazy">
                         
                         <ul class="social-icons-footer">
-                            <li><a href="https://www.facebook.com/profile.php?id=61582732228587#" target="_blank"><img src="/assets/images/facebook.png" width="32" alt="F"/></a></li>
-                            <li><a href="https://www.instagram.com/edificioresidencialnoah" target="_blank"><img src="/assets//images/instagram.png" width="32" alt="I"/></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61582732228587#" target="_blank"><img src="assets/images/facebook.png" width="32" alt="F"/></a></li>
+                            <li><a href="https://www.instagram.com/edificioresidencialnoah" target="_blank"><img src="assets//images/instagram.png" width="32" alt="I"/></a></li>
                         <!--    
-                            <li><a href="URL_WHATSAPP" target="_blank"><img src="/assets//images/whatsapp.png" width="32" alt="W"/></a></li>
-                            <li><a href="URL_YOUTUBE" target="_blank"><img src="/assets/images/youtube.png" width="32" alt="Y"/></a></li>
+                            <li><a href="URL_WHATSAPP" target="_blank"><img src="assets//images/whatsapp.png" width="32" alt="W"/></a></li>
+                            <li><a href="URL_YOUTUBE" target="_blank"><img src="assets/images/youtube.png" width="32" alt="Y"/></a></li>
                         -->
                         </ul>
                     </div>
 
                     <div class="sub-col-mrk-contact">
-                        <img src="/assets/images/logo-mrk.png" alt="Grupo MRK" width="172" fetchpriority="low" loading="lazy">
+                        <img src="assets/images/logo-mrk.png" alt="Grupo MRK" width="172" fetchpriority="low" loading="lazy">
                         
                         <div class="contato-telefone">
-                            <p class="numero-telefone"><img width="32" src="/assets/images/whats-gold.png" alt=""> 12 99185-5181</p>
+                            <p class="numero-telefone"><img width="32" src="assets/images/whats-gold.png" alt=""> 12 99185-5181</p>
                         </div>
 
-                        <p class="handle-social-mrk"><img width="32" src="/assets/images/redes.png" alt=""> @mrkincorporadora</p>
+                        <p class="handle-social-mrk"><img width="32" src="assets/images/redes.png" alt=""> @mrkincorporadora</p>
                     </div>
                 </div>
 
@@ -470,16 +514,16 @@
         </div>
         <div class="footer-bottom">
             <div class="wrapper">
-                <a href="" target="_blank">Desenvolvido por Affinity</a>
+                <a href="https://agenciaaffinity.com.br/" target="_blank">Desenvolvido por Affinity</a>
             </div>
         </div>
     </footer>
 
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script defer src="/assets/scripts/global.js"></script>
-    <script defer src="/assets/scripts/swiper.js"></script>
-    <script defer src="/assets/scripts/form-footer.js"></script>
-    <script defer src="/assets/scripts/form.js"></script>
+    <script defer src="assets/scripts/global.js"></script>
+    <script defer src="assets/scripts/swiper.js"></script>
+    <script defer src="assets/scripts/form-footer.js"></script>
+    <script defer src="assets/scripts/form.js"></script>
 
     
     <!-- LightGallery planta ---->
