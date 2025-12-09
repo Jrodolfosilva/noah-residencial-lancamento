@@ -71,12 +71,15 @@
   --color-laranja: #b99565;
   --color-branco: #fff;
   font-family: "Campton", sans-serif;
-
+  --altura-header:90px;
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden !important;
+}
+section{
+    scroll-margin-top: var(--altura-header);
 }
 
 b {
